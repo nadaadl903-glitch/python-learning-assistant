@@ -1,0 +1,100 @@
+Python File Handling
+File handling allows Python programs to create, read, write, and modify files stored on a computer.
+Opening a File
+The open() function is used to open a file.
+Basic syntax:
+file = open("filename.txt", "mode")
+The first argument is the file name. The second argument specifies how the file will be opened.
+Common File Modes
+"r" opens a file for reading. This is the default mode.
+"w" opens a file for writing. If the file already exists, its previous content is replaced.
+"a" opens a file for appending. New content is added to the end of the file.
+"x" creates a new file and raises an error if the file already exists.
+Reading a File
+The read() method reads the content of a file.
+Example:
+file = open("data.txt", "r")
+content = file.read()
+print(content)
+file.close()
+Reading Lines
+The readline() method reads one line from a file.
+Example:
+file = open("data.txt", "r")
+line = file.readline()
+print(line)
+file.close()
+The readlines() method returns the lines of a file as a list.
+Example:
+file = open("data.txt", "r")
+lines = file.readlines()
+print(lines)
+file.close()
+Writing to a File
+The write() method writes text to a file.
+Example:
+file = open("data.txt", "w")
+file.write("Hello Python")
+file.close()
+Using "w" mode replaces the existing content of the file.
+Appending to a File
+The append mode "a" adds new content without removing the existing content.
+Example:
+file = open("data.txt", "a")
+file.write("\nNew line")
+file.close()
+Closing a File
+The close() method closes an opened file.
+Example:
+file = open("data.txt", "r")
+content = file.read()
+file.close()
+Closing files is important because it releases system resources.
+Using with
+The with statement is recommended for file handling because it automatically closes the file after the block finishes.
+Example:
+with open("data.txt", "r") as file:
+content = file.read()
+print(content)
+Writing Multiple Lines
+The writelines() method can write multiple strings to a file.
+Example:
+lines = ["Python\n", "Java\n", "C++\n"]
+with open("languages.txt", "w") as file:
+file.writelines(lines)
+File Paths
+A file can be opened using a relative path or an absolute path.
+Example of a relative path:
+with open("data/example.txt", "r") as file:
+content = file.read()
+An absolute path contains the complete location of the file on the computer.
+Checking if a File Exists
+The os.path.exists() function can be used to check whether a file exists.
+Example:
+import os
+if os.path.exists("data.txt"):
+print("File exists")
+else:
+print("File does not exist")
+Working with JSON Files
+Python provides the json module for working with JSON data.
+Example:
+import json
+data = {
+"name": "Alice",
+"age": 25
+}
+with open("student.json", "w") as file:
+json.dump(data, file)
+Reading JSON Data
+JSON data can be loaded using json.load().
+Example:
+import json
+with open("student.json", "r") as file:
+data = json.load(file)
+print(data)
+Common File Handling Errors
+FileNotFoundError occurs when Python cannot find the requested file.
+PermissionError occurs when the program does not have permission to access a file.
+IsADirectoryError occurs when a directory is used where a file was expected.
+File handling is useful for storing information permanently and working with external data.

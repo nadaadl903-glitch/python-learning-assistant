@@ -1,0 +1,117 @@
+q1:what is a variable in python?
+
+Answer
+In Python, a variable is a name that refers to a value stored in memory. It is a name used to store a value, and Python does not require declaring the variable type explicitly. A variable can be assigned a value, and Python automatically determines the type of the value assigned to a variable.
+
+Sources
+data\python_basics.txt
+data\variabls_data_types.txt  
+#------------------------------------------
+
+q2:what are the basic data types in python?
+
+Answer
+The basic data types in Python are:
+
+Integer
+Float
+String
+Boolean
+Sources
+data\python_basics.txt
+data\variabls_data_types.txt
+#---------------------------------
+
+q3:what is a python function? 
+
+A Python function is a reusable block of code that performs a specific task, helping to organize code, reduce repetition, and make programs easier to maintain.
+
+Sources
+data\python_basics.txt
+data\variabls_data_types.txt
+data\functions.txt
+#----------------------------------
+
+q4:what is the difference between a parameter and an argument?
+
+Answer
+A parameter is a variable declared within the function's definition, whereas an argument is a value passed to the function when it is called.
+
+In other words, parameters are the input variables that are defined inside a function, whereas arguments are the values that are actually passed to the function when it's executed.
+
+Sources
+data\functions.txt
+#-----------------------------------
+
+q5:what is object-oriented programming in python?
+
+Answer
+Object-Oriented Programming (OOP) in Python is a programming approach based on objects and classes. It helps organize large programs by grouping related data and behavior together.
+
+Sources
+data\oop.txt
+data\exceptions.txt
+#---------------------------------------
+
+q6:what is a class in python?
+
+Answer
+In Python, a class is a blueprint used to create objects. It defines attributes and methods that objects can have.
+
+Sources
+data\oop.txt
+data\variabls_data_types.txt
+#-------------------------------------
+
+q7:what is exception handling?
+
+Answer
+Exception handling is a way to manage and respond to exceptions that occur during the execution of a program, making it more reliable and preventing unexpected errors from immediately terminating the application.
+
+Sources
+data\exceptions.txt
+#-----------------------------------
+
+q8:what is the purpose of try and except?
+
+Answer
+The purpose of try and except is to handle exceptions that may occur in a block of code, preventing the program from crashing or terminating abruptly. It allows developers to catch and manage exceptions, ensuring that the program can continue running smoothly and providing useful error messages to the user.
+
+Sources
+data\exceptions.txt
+#------------------------------------
+
+q9:how can you read a file in python?
+
+Answer
+You can read a file in Python by using the readlines() or read() methods.
+
+To read all lines of a file at once, use the readlines() method, like this:
+
+file = open("filename.txt", "r")
+lines = file.readlines()
+print(lines)
+file.close()
+To read a file line by line, use the readline() method, like this:
+
+file = open("filename.txt", "r")
+line = file.readline()
+print(line)
+file.close()
+Alternatively, you can use the read() method to read the entire file at once, like this:
+
+file = open("filename.txt", "r")
+content = file.read()
+print(content)
+file.close()
+Sources
+data\file_handling.txt
+#----------------------------
+q10:what happens if you ask about atopic that is not covered in the documents?
+
+nswer
+"I don't have enough information in the provided documents."
+
+Sources
+data\file_handling.txt
+data\exceptions.txt

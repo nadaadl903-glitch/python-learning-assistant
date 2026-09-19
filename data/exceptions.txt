@@ -1,0 +1,83 @@
+Python Exceptions and Error Handling
+An exception is an error that occurs while a Python program is running. If an exception is not handled, the program may stop and display an error message.
+Common Types of Errors
+SyntaxError occurs when Python code does not follow the correct syntax.
+Example:
+if True
+print("Hello")
+NameError occurs when a variable or function name is not defined.
+Example:
+print(username)
+TypeError occurs when an operation is performed on incompatible data types.
+Example:
+result = "5" + 10
+ValueError occurs when a function receives a value with the correct type but an inappropriate value.
+Example:
+number = int("hello")
+IndexError occurs when trying to access an index that does not exist in a sequence.
+Example:
+numbers = [1, 2, 3]
+print(numbers[5])
+KeyError occurs when trying to access a dictionary key that does not exist.
+Example:
+student = {"name": "Alice"}
+print(student["age"])
+ZeroDivisionError occurs when a number is divided by zero.
+Example:
+result = 10 / 0
+try and except
+The try block contains code that may cause an exception. The except block handles the exception.
+Example:
+try:
+number = int(input("Enter a number: "))
+print(10 / number)
+except ZeroDivisionError:
+print("Cannot divide by zero")
+Handling Multiple Exceptions
+A program can have multiple except blocks to handle different types of exceptions.
+Example:
+try:
+number = int(input("Enter a number: "))
+result = 10 / number
+except ValueError:
+print("Please enter a valid number")
+except ZeroDivisionError:
+print("Cannot divide by zero")
+The else Block
+The else block runs when no exception occurs in the try block.
+Example:
+try:
+number = int(input("Enter a number: "))
+except ValueError:
+print("Invalid input")
+else:
+print("The number is", number)
+The finally Block
+The finally block always runs whether an exception occurs or not.
+It is commonly used for cleanup operations such as closing files or releasing resources.
+Example:
+try:
+file = open("data.txt", "r")
+except FileNotFoundError:
+print("File not found")
+finally:
+print("Operation finished")
+Raising Exceptions
+The raise statement can be used to manually generate an exception.
+Example:
+age = -1
+if age < 0:
+raise ValueError("Age cannot be negative")
+Custom Exceptions
+Python allows programmers to create custom exception classes by inheriting from the Exception class.
+Example:
+class InvalidAgeError(Exception):
+pass
+age = -1
+if age < 0:
+raise InvalidAgeError("Invalid age")
+Exception Handling Best Practices
+Exceptions should be handled only when the program can respond appropriately.
+It is better to catch specific exceptions instead of using a general except block for every possible error.
+Error messages should provide useful information to help identify the problem.
+Exception handling improves program reliability and prevents unexpected errors from immediately terminating the application.

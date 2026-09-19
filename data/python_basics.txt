@@ -1,0 +1,57 @@
+Python is a high-level, interpreted programming language known for its simple and readable syntax. It is widely used in web development, data analysis, artificial intelligence, machine learning, automation, and scientific computing.
+Python programs are usually stored in files with the .py extension.
+Variables
+A variable is a name used to store a value. Python does not require declaring the variable type explicitly.
+Example: name = "Alice" age = 25 height = 170.5
+Python automatically determines the type of the value assigned to a variable.
+Printing Output
+The print() function is used to display information on the screen.
+Example: print("Hello, Python!") print(age)
+Comments
+Comments are notes written inside the code for explanation. Python ignores comments during execution.
+A single-line comment starts with the # symbol.
+Example:
+This is a comment
+print("Hello")
+Basic Operators
+Arithmetic operators include:
+addition
+subtraction
+multiplication / division // floor division % modulus ** exponentiation
+Example: x = 10 y = 3
+print(x + y) print(x * y) print(x / y) print(x // y) print(x % y) print(x ** y)
+Input
+The input() function is used to receive data from the user. The value returned by input() is a string by default.
+Example: name = input("Enter your name: ") print("Hello", name)
+Type Conversion
+Python provides functions for converting values between common data types.
+int() converts a value to an integer. float() converts a value to a floating-point number. str() converts a value to a string.
+Example: age = int(input("Enter your age: ")) price = float(input("Enter the price: "))
+Conditional Statements
+The if statement is used to execute code when a condition is true.
+Example: age = 20
+if age >= 18: print("Adult") else: print("Minor")
+The elif statement can be used to check additional conditions.
+Example: score = 85
+if score >= 90: print("Excellent") elif score >= 60: print("Pass") else: print("Fail")
+Loops
+Loops are used to repeat a block of code.
+The for loop is commonly used to iterate over a sequence.
+Example: for i in range(5): print(i)
+The while loop repeats code while a condition is true.
+Example: count = 0
+while count < 5: print(count) count += 1
+Python Data Structures
+Python provides several built-in data structures, including lists, tuples, sets, and dictionaries.
+A list is an ordered and mutable collection.
+Example: numbers = [1, 2, 3, 4]
+A tuple is an ordered and immutable collection.
+Example: point = (10, 20)
+A set is an unordered collection of unique elements.
+Example: numbers = {1, 2, 3}
+A dictionary stores data as key-value pairs.
+Example: student = { "name": "Alice", "age": 25 }
+Indentation
+Python uses indentation to define blocks of code. Incorrect indentation can cause an IndentationError.
+Example: if age >= 18: print("Adult")
+In this example, the print statement is indented because it belongs to the if block.

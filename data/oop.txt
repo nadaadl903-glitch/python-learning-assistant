@@ -1,0 +1,109 @@
+Python Object-Oriented Programming (OOP)
+Object-Oriented Programming is a programming approach based on objects and classes. It helps organize large programs by grouping related data and behavior together.
+Classes
+A class is a blueprint used to create objects. It defines attributes and methods that objects can have.
+Example:
+class Student:
+pass
+Objects
+An object is an instance of a class.
+Example:
+class Student:
+pass
+student1 = Student()
+student2 = Student()
+Each object is a separate instance of the Student class.
+The init Method
+The init method is a special method that is automatically called when a new object is created. It is commonly used to initialize object attributes.
+Example:
+class Student:
+def init(self, name, age):
+self.name = name
+self.age = age
+student = Student("Alice", 20)
+Instance Attributes
+Instance attributes are data stored separately for each object.
+Example:
+class Car:
+def init(self, brand):
+self.brand = brand
+car1 = Car("Toyota")
+car2 = Car("Ford")
+car1 and car2 have different brand values.
+Methods
+A method is a function defined inside a class. Methods usually operate on the data of an object.
+Example:
+class Calculator:
+def add(self, a, b):
+return a + b
+calculator = Calculator()
+result = calculator.add(5, 3)
+The self Parameter
+The self parameter refers to the current object. It is used to access the object's attributes and methods.
+Example:
+class Person:
+def init(self, name):
+self.name = name
+def introduce(self):
+    print("My name is", self.name)
+
+Inheritance
+Inheritance allows one class to reuse attributes and methods from another class.
+Example:
+class Animal:
+def speak(self):
+print("Animal makes a sound")
+class Dog(Animal):
+pass
+dog = Dog()
+dog.speak()
+In this example, Dog inherits the speak() method from Animal.
+Method Overriding
+A child class can provide its own implementation of a method inherited from the parent class.
+Example:
+class Animal:
+def speak(self):
+print("Animal sound")
+class Dog(Animal):
+def speak(self):
+print("Bark")
+dog = Dog()
+dog.speak()
+Encapsulation
+Encapsulation means keeping data and methods together inside a class and controlling how data is accessed.
+Python uses naming conventions such as a leading underscore to indicate that an attribute is intended for internal use.
+Example:
+class Account:
+def init(self):
+self._balance = 0
+Polymorphism
+Polymorphism allows different classes to provide the same method name with different behavior.
+Example:
+class Dog:
+def speak(self):
+print("Bark")
+class Cat:
+def speak(self):
+print("Meow")
+animals = [Dog(), Cat()]
+for animal in animals:
+animal.speak()
+Both objects use the same speak() method name, but each class provides different behavior.
+Abstraction
+Abstraction means hiding unnecessary implementation details and exposing only the important functionality.
+In Python, abstraction can be implemented using abstract base classes from the abc module.
+Example:
+from abc import ABC, abstractmethod
+class Animal(ABC):
+@abstractmethod
+def speak(self):
+    pass
+
+OOP Benefits
+Object-Oriented Programming can make software easier to organize, reuse, maintain, and extend.
+The main OOP concepts are:
+Classes and Objects
+Encapsulation
+Inheritance
+Polymorphism
+Abstraction

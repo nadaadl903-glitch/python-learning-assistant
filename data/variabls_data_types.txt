@@ -1,0 +1,61 @@
+A variable is a name that refers to a value stored in memory. In Python, variables are created when a value is assigned to them.
+Example: name = "Alice" age = 25 price = 19.99
+Variable names should be meaningful and follow Python naming rules.
+Valid examples: student_name = "John" total_price = 100 number1 = 50
+Variable names cannot start with a number and cannot contain spaces.
+Data Types
+Python has several built-in data types.
+Integer
+The int type represents whole numbers without decimal points.
+Example: age = 25 temperature = -5
+Float
+The float type represents numbers that contain decimal points.
+Example: price = 19.99 average = 85.5
+String
+The str type represents text.
+Example: name = "Alice" message = "Welcome to Python"
+Strings can be written using single or double quotation marks.
+Boolean
+The bool type has only two values: True False
+Example: is_student = True is_active = False
+Boolean values are commonly used in conditions.
+List
+A list is an ordered and mutable collection of values.
+Example: numbers = [10, 20, 30, 40]
+Lists can contain values of different types.
+Example: items = ["Python", 10, True]
+Tuple
+A tuple is an ordered and immutable collection.
+Example: coordinates = (10, 20)
+After a tuple is created, its elements cannot normally be changed.
+Set
+A set is an unordered collection of unique values.
+Example: numbers = {1, 2, 3, 4}
+Sets automatically remove duplicate values.
+Example: numbers = {1, 2, 2, 3} The resulting set contains only 1, 2, and 3.
+Dictionary
+A dictionary stores data as key-value pairs.
+Example: student = { "name": "Alice", "age": 25, "grade": "A" }
+The keys are used to access their corresponding values.
+Example: print(student["name"])
+Checking Data Types
+The type() function is used to determine the data type of a value.
+Example: x = 10 print(type(x))
+The output indicates that x is an integer.
+Type Conversion
+Python allows values to be converted between compatible data types.
+Examples:
+x = int("10") y = float("5.5") z = str(100)
+The int() function converts a value to an integer.
+The float() function converts a value to a floating-point number.
+The str() function converts a value to a string.
+Mutable and Immutable Types
+Mutable objects can be changed after they are created.
+Lists and dictionaries are examples of mutable types.
+Immutable objects cannot normally be changed after creation.
+Integers, floats, strings, and tuples are examples of immutable types.
+Variable Assignment
+Python supports assigning values to multiple variables.
+Example: x, y, z = 10, 20, 30
+It is also possible to assign the same value to multiple variables.
+Example: a = b = c = 0

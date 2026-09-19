@@ -1,0 +1,157 @@
+Python Functions
+
+A function is a reusable block of code that performs a specific task. Functions help organize code, reduce repetition, and make programs easier to maintain.
+
+Defining a Function
+
+In Python, a function is defined using the def keyword.
+
+Example:
+def greet():
+print("Hello!")
+
+Calling a Function
+
+A function is executed by calling its name followed by parentheses.
+
+Example:
+greet()
+
+Function Parameters
+
+Parameters allow a function to receive data.
+
+Example:
+def greet(name):
+print("Hello", name)
+
+greet("Alice")
+
+In this example, name is a parameter and "Alice" is an argument.
+
+Multiple Parameters
+
+A function can have more than one parameter.
+
+Example:
+def add(a, b):
+print(a + b)
+
+add(5, 3)
+
+Return Statement
+
+The return statement sends a value back to the code that called the function.
+
+Example:
+def add(a, b):
+return a + b
+
+result = add(5, 3)
+print(result)
+
+The return statement also ends the execution of the function.
+
+Default Parameters
+
+A parameter can have a default value.
+
+Example:
+def greet(name="Guest"):
+print("Hello", name)
+
+greet()
+greet("Alice")
+
+If no argument is provided, the default value is used.
+
+Keyword Arguments
+
+Arguments can be passed using parameter names.
+
+Example:
+def student_info(name, age):
+print(name, age)
+
+student_info(age=20, name="Alice")
+
+Variable-Length Arguments
+
+The *args syntax allows a function to receive multiple positional arguments.
+
+Example:
+def add_numbers(*numbers):
+total = 0
+for number in numbers:
+total += number
+return total
+
+result = add_numbers(1, 2, 3, 4)
+
+The **kwargs syntax allows a function to receive multiple keyword arguments.
+
+Example:
+def show_info(**info):
+print(info)
+
+show_info(name="Alice", age=20)
+
+Local and Global Variables
+
+A local variable is created inside a function and can normally be used only inside that function.
+
+Example:
+def calculate():
+x = 10
+print(x)
+
+A global variable is defined outside functions and can be accessed from different parts of the program.
+
+Example:
+x = 10
+
+def show():
+print(x)
+
+Lambda Functions
+
+A lambda function is a small anonymous function that can contain a single expression.
+
+Example:
+square = lambda x: x * x
+
+print(square(5))
+
+Docstrings
+
+A docstring is a string used to document a function, class, or module.
+
+Example:
+def add(a, b):
+"""Return the sum of two numbers."""
+return a + b
+
+Functions and Code Reuse
+
+Functions are useful because the same code can be called multiple times without writing it again.
+
+Example:
+def calculate_area(length, width):
+return length * width
+
+area1 = calculate_area(5, 3)
+area2 = calculate_area(10, 4)
+
+Recursive Functions
+
+A recursive function is a function that calls itself.
+
+Example:
+def factorial(n):
+if n == 0:
+return 1
+return n * factorial(n - 1)
+
+result = factorial(5)
+
+A recursive function should have a base case to stop the recursion.
