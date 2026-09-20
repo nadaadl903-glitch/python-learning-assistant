@@ -1,0 +1,16 @@
+Question,Retrieved Source,Answer,Correct or not
+What is a Python exception?,..\data\exceptions.txt,"A Python exception is an error that occurs while a Python program is running, which can be handled using try-except blocks to prevent the program from stopping and displaying an error message.",
+What is a SyntaxError?,"..\data\exceptions.txt, ..\data\python_basics.txt, ..\data\functions.txt",A SyntaxError occurs when Python code does not follow the correct syntax.,
+What is a NameError?,"..\data\variabls_data_types.txt, ..\data\exceptions.txt, ..\data\oop.txt",A NameError is an exception that occurs when a variable or function name is not defined in Python.,
+What is a TypeError?,"..\data\variabls_data_types.txt, ..\data\exceptions.txt, ..\data\python_basics.txt",A TypeError is a type of error that occurs when an operation is performed on incompatible data types.,
+What are Python functions?,"..\data\functions.txt, ..\data\python_basics.txt, ..\data\variabls_data_types.txt","Python functions are a reusable block of code that performs a specific task, helping to organize code, reduce repetition, and make programs easier to maintain.",
+What is object-oriented programming?,..\data\oop.txt,"Object-Oriented Programming (OOP) is a programming approach based on objects and classes, which helps organize large programs by grouping related data and behavior together.",
+What is a class in Python?,"..\data\oop.txt, ..\data\python_basics.txt","In Python, a class is a blueprint used to create objects. It defines attributes and methods that objects can have.",
+What are Python variables?,"..\data\python_basics.txt, ..\data\variabls_data_types.txt","Python variables are names used to store values. They are created when a value is assigned to them, and they can be of any data type (integer, float, string, boolean, etc.).",
+What are Python data types?,"..\data\variabls_data_types.txt, ..\data\python_basics.txt","Python has several built-in data types, including:
+
+1. Integer
+2. Float
+3. String
+4. Boolean",
+How is file handling used in Python?,"..\data\file_handling.txt, ..\data\exceptions.txt","File handling is used in Python for creating, reading, writing, and modifying files stored on a computer. It is useful for storing information permanently and working with external data, as well as performing cleanup operations such as closing files or releasing resources.",
